@@ -1,21 +1,37 @@
 # Instalacion de un entorno profesional de Python en WSL
 
->> sudo apt update
+```sh
+sudo apt update
+```
 
 Upgrade:
 
->> sudo apt -y upgrade
+```sh
+sudo apt -y upgrade
+```
 
 Con esto ya tenemos python3 instalado y actualizado.
 
 ### Instalacion de gestor de paquetes (pip)
 
->> sudo apt install -y python3-pip
+```sh
+sudo apt install -y python3-pip
+```
 
 Para verificar la version de pip:
 
->> pip3 -V
+```sh
+pip3 -V
+```
 
 ### Otras dependencias de un entorno profesional
 
->> sudo apt install -y build-essential libssl-dev libffi-dev python3-dev
+```shsudo apt install -y build-essential libssl-dev libffi-dev python3-dev
+```
+
+# Instrucciones para correr el Juego
+
+```sh
+cd game
+python3 main.py
+```
