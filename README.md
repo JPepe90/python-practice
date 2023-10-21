@@ -26,7 +26,8 @@ pip3 -V
 
 ### Otras dependencias de un entorno profesional
 
-```shsudo apt install -y build-essential libssl-dev libffi-dev python3-dev
+```sh
+sudo apt install -y build-essential libssl-dev libffi-dev python3-dev
 ```
 
 # Instrucciones para correr el Juego
