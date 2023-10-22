@@ -22,3 +22,12 @@ Una vez iniciada la app ejegir la opcion deseada:
 
   s: Para hacer la grafica de un pais --> Luego solicitara ingresar el nombre del pais en letra capital
   n: Para hacer la grafica de porcentaje poblacional de los paices de sudamerica
+
+# Instrucciones para activar el web-server
+
+```sh
+cd web-server
+source web-env/bin/activate
+pip3 install -r requirements.txt
+python3 main.py
+```

@@ -5,7 +5,7 @@ import read_csv as fl
 def generate_bar_chart(labels, values, pais):
   fig, ax = plt.subplots()
   ax.bar(labels, values)
-  plt.savefig('./charts/png/bar/bar-' + pais + '.png')
+  plt.savefig('./png/bar/bar-' + pais + '.png')
   plt.close()
 
 
@@ -13,12 +13,12 @@ def generate_pie_chart(labels, values):
   fig, ax = plt.subplots()
   ax.pie(values, labels=labels)
   ax.axis('equal')
-  plt.savefig('./charts/png/pie/pie.png')
+  plt.savefig('./png/pie/pie.png')
   plt.close()
 
 
-if __name__ == '__main__':
-  data = fl.read_csv('./charts/data.csv')
+def init_question():
+  data = fl.read_csv('./data.csv')
 
   ejecucion = ''
   while ejecucion != 'n' and ejecucion != 's':
@@ -52,3 +52,6 @@ if __name__ == '__main__':
       values.append(float(element['World Population Percentage']))
       
     generate_pie_chart(labels, values)
+
+if __name__ == '__main__':
+  init_question()

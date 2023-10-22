@@ -1,7 +1,7 @@
 import charts
 
 def run():
-  charts.generate_pie_chart()
+  charts.init_question()
 
 if __name__ == '__main__':
   run()
