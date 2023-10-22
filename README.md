@@ -1,38 +1,24 @@
-# Instalacion de un entorno profesional de Python en WSL
-
-```sh
-sudo apt update
-```
-
-Upgrade:
-
-```sh
-sudo apt -y upgrade
-```
-
-Con esto ya tenemos python3 instalado y actualizado.
-
-### Instalacion de gestor de paquetes (pip)
-
-```sh
-sudo apt install -y python3-pip
-```
-
-Para verificar la version de pip:
-
-```sh
-pip3 -V
-```
-
-### Otras dependencias de un entorno profesional
-
-```sh
-sudo apt install -y build-essential libssl-dev libffi-dev python3-dev
-```
-
 # Instrucciones para correr el Juego
 
 ```sh
+git clone
 cd game
+source game-env/bin/activate
+pip3 install -r requirements.txt
 python3 main.py
 ```
+
+# Instrucciones para hacer la grafica del csv
+
+```sh
+git clone
+cd charts
+source charts-env/bin/activate
+pip3 install -r requirements.txt
+python3 main.py
+```
+
+Una vez iniciada la app ejegir la opcion deseada:
+
+  s: Para hacer la grafica de un pais --> Luego solicitara ingresar el nombre del pais en letra capital
+  n: Para hacer la grafica de porcentaje poblacional de los paices de sudamerica
