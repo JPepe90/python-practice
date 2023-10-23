@@ -50,7 +50,8 @@ def init_question():
     for element in data_filter:
       labels.append(element['Country/Territory'])
       values.append(float(element['World Population Percentage']))
-      
+    
+    # print(labels)
     generate_pie_chart(labels, values)
 
 if __name__ == '__main__':
